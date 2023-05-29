@@ -1,102 +1,234 @@
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="dark">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous"> -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Homepage</title>
-</head>
-<body>
+  </head>
+  <body>
     <main>
-        <div id="aboutme" class="container">
-            <h1>About Me</h1>
-            <p>My name is Jørgen. I have had a lifelong passion for programming. Ever since age 11 when I asked my dad to get me "Visual Basic 6 - Black Book" I have been making personal projects. At first It was hello world and later I moved on to making a winamp clone. Later I got into creating games using Unreal Engine and Unity. Creating all my own art using asesprite and blender, and creating all the music and sounds using Logic X and FL Studio.</p>
-            <p>During the last year I have started the switch to Web Development. Currently focusing on the backend part. I have been combining being a full-time dad, working a full-time job with full-time studies and programming in the evenings.</p>
-            <p>Hoping to make development my full-time job. Check out my github to see what I am working on.</p>
+      <div id="aboutme" class="container">
+        <h1>About Me</h1>
+        <p>
+          My name is Jørgen. I have had a lifelong passion for programming. Ever
+          since age 11 when I asked my dad to get me "Visual Basic 6 - Black
+          Book" I have been making personal projects. At first It was hello
+          world and later I moved on to making a winamp clone. Later I got into
+          creating games using Unreal Engine and Unity. Creating all my own art
+          using asesprite and blender, and creating all the music and sounds
+          using Logic X and FL Studio.
+        </p>
+        <p>
+          During the last year I have started the switch to Web Development.
+          Currently focusing on the backend part. I have been combining being a
+          full-time dad, working a full-time job with full-time studies and
+          programming in the evenings.
+        </p>
+        <p>
+          Hoping to make development my full-time job. Check out my github to
+          see what I am working on.
+        </p>
 
-            <a class="link" target="_blank" href="https://github.com/jorgeneikemo">My github</a>
-            <a class="link" href="mailto:jorgen.eikemo@gmail.com">Send me an email</a>
+        <a class="link" target="_blank" href="https://github.com/jorgeneikemo"
+          >My github</a
+        >
+        <a class="link" href="mailto:jorgen.eikemo@gmail.com"
+          >Send me an email</a
+        >
+      </div>
+      <div class="spacer"></div>
+      <div id="projects" class="container">
+        <h1>My Projects</h1>
+        <div class="card">
+          <h3>Cocktail REST API</h3>
+          <p>
+            REST API for getting, adding, updating and deleting cocktails from a
+            mySQL database. The database is strutured in the Third Normal Form
+            with three tables: cocktails, ingredients and coctailingredients.
+          </p>
+          <p class="list-title">The api endpoints currently support:</p>
+          <ul>
+            <li>Getting all cocktails</li>
+            <li>Getting cocktail by id</li>
+            <li>Querying by name and/or ingredients</li>
+            <li>Adding a new cocktail</li>
+            <li>Updating a cocktail by id</li>
+            <li>Deleting a cocktail by id</li>
+            <li>Pagination by size and/or page (limit and offset)</li>
+          </ul>
+          <p>
+            Personal project for teaching myself REST APIS, sequelize and mySQL.
+          </p>
+          <h4>Built with</h4>
+          <p>Javascript, MySQL, ExpressJS, Sequelize</p>
+          <div class="buttons">
+            <a
+              class="link"
+              href="https://github.com/jorgeneikemo/drinksREST"
+              target="_blank"
+              >Github</a
+            >
+          </div>
         </div>
-        <div class="spacer"></div>
-        <div id="projects" class="container">
-                <h1>My Projects</h1>
-                <div class="card">
-                    <h3>MovieDB</h3>
-                    <p>You can search for movies and series using the OMDBapi. You can create a user to add movies and series to your favourites. The movies are then added to a new mongodb collection for your username. This is a personal project for teaching myself express, user authentification, password hashing and mongodb.</p>
-                    <h4>Built with</h4>
-                    <p>Javascript, MongoDB, ExpressJs, EJS, Bootstrap, HTML, CSS</p> 
-                    <div class="buttons">
-                        <a class="link" href="https://github.com/jorgeneikemo/MovieDB" target="_blank">Github</a>
-                        <a class="link" href="https://mongodb-moviedb.cyclic.app" target="_blank">Demo</a>
-                        </a>
-                    </div>
-                </div>
-                <div class="card">
-                    <h3>Semester Project 2023</h3>
-                    <p>This is an application for tracking staff and delivery drivers for the ficticious company WeDeliverTech™. The application is a receptionist board with tables for staff members and delivery drivers. The staff table is populated with random staff members using randomuser.me. Delivery drivers are manually entered and go through a verification process to check that the entered information is valid. The application checks if employees are late and alerts the user if they are. The application is written using vanilla javascript and jquery v.3. Styling is done using bootstrap v.5 and custom css. <br><br> Grade: A.</p>
-                    <h4>Built with</h4>
-                    <p>Javascript, Bootstrap, Jquery, HTML, CSS</p>
-                    <div class="buttons">
-                        <a class="link" href="https://github.com/jorgeneikemo/Jorgen_Eikemo_SP1" target="_blank">Github</a>
-                        <a class="link" href="https://jorgeneikemo.github.io/Jorgen_Eikemo_SP1/Web%20Application/index.html" target="_blank">Demo</a>
-                        </a>
-                    </div>
-                </div>
-                <div class="card">
-                    <h3>Cocktail REST API</h3>
-                    <p>This is a REST API for getting, adding and deleting cocktails from a mySQL database. The database is strutured in the Third Normal Form with three tables: cocktails, ingredients and coctailingredients. <br><br>
-                    Currently the api endpoints support: getting all cocktails, getting cocktail by id, querying by name or ingredients. The API also supports pagination by size and page(limit and offset. <br><br>
-                    Personal project for teaching myself REST APIS, sequelize and mySQL.</p>
-                    <h4>Built with</h4>
-                    <p>Javascript, MySQL, ExpressJS, Sequelize</p>
-                    <div class="buttons">
-                        <a class="link" href="https://github.com/jorgeneikemo/drinksREST" target="_blank">Github</a>
-                        </a>
-                    </div>
-                </div>
-                <div class="card">
-                    <h3>Countries of the World</h3>
-                    <p>Search for countries of the world. Get info about them. Using restcountries.api. Personal project for learning to work with api, html, bootstrap and javascript.</p>
-                    <h4>Built with</h4>
-                    <p>Javascript, Bootstrap, CSS</p>
-                    <div class="buttons">
-                        <a class="link" href="https://github.com/jorgeneikemo/countryapi" target="_blank">Github</a>
-                        <a class="link" href="https://jorgeneikemo.github.io/countryapi/" target="_blank">Demo</a>
-                        </a>
-                    </div>
-                </div>
-                <div class="card">
-                    <h3>Flag Game</h3>
-                    <p>Game where you attempt to guess the flag. Random flags for all independent nations come from restcountries api. Personal project for learning to work with APIs, HTML, CSS and javascript.</p>
-                    <h4>Built with</h4>
-                    <p>Javascript, HTML, CSS</p>
-                    <div class="buttons">
-                        <a class="link" href="https://github.com/jorgeneikemo/flaggame" target="_blank">Github</a>
-                        <a class="link" href="https://jorgeneikemo.github.io/flaggame/" target="_blank">Demo</a>
-                        </a>
-                    </div>
-                </div>
-                <div class="card">
-                    <h3>2D platformer</h3>
-                    <p>2D platform controller created in Unity3d and written in C#. I created all assets using Asesprite, Blender 3d and FL Studio. Personal project for learning to create a solid 2d platform controller in the style of super meat boy/celeste, and learning to create pixel art and animations. </p>
-                    <img src="https://raw.githubusercontent.com/jorgeneikemo/2dPlatformer/master/documentation/demo.gif" alt="">
-                    <h4>Built with</h4>
-                    <p>Unity3d, C#, Aseprite, Blender 3d, FL Studio</p>
-                    <div class="buttons">
-                        <a class="link" href="https://github.com/jorgeneikemo/2dPlatformer" target="_blank">Github</a>
-                        <a class="link" href="https://drive.google.com/file/d/1r2Afi48dMHUTAg6vuX76cKtx-K3k8LsB/view" target="_blank">Download demo</a>
-                        </a>
-                    </div>
-                </div>
+        <div class="card">
+          <h3>MovieDB</h3>
+          <p>
+            You can search for movies and series using the OMDBapi. You can
+            create a user to add movies and series to your favourites. The
+            movies are then added to a new mongodb collection for your username.
+            This is a personal project for teaching myself express, user
+            authentification, password hashing and mongodb.
+          </p>
+          <h4>Built with</h4>
+          <p>Javascript, MongoDB, ExpressJs, EJS, Bootstrap</p>
+          <div class="buttons">
+            <a
+              class="link"
+              href="https://github.com/jorgeneikemo/MovieDB"
+              target="_blank"
+              >Github</a
+            >
+            <a
+              class="link"
+              href="https://mongodb-moviedb.cyclic.app"
+              target="_blank"
+              >Demo</a
+            >
+          </div>
         </div>
+        <div class="card">
+          <h3>Semester Project 2023</h3>
+          <p>
+            This is an application for tracking staff and delivery drivers for
+            the ficticious company WeDeliverTech™. The application is a
+            receptionist board with tables for staff members and delivery
+            drivers. The staff table is populated with random staff members
+            using randomuser.me. Delivery drivers are manually entered and go
+            through a verification process to check that the entered information
+            is valid. The application checks if employees are late and alerts
+            the user if they are. The application is written using vanilla
+            javascript and jquery v.3. Styling is done using bootstrap v.5 and
+            custom css.
+          </p>
+          <p>
+            There is also documentation for a project plan using Jira in the
+            github. The project plan includes Sprints, Epics, Issues, a Board
+            keeping track of progression along with a reflection on how
+            different tasks were solved.
+          </p>
+          <p>Grade: A.</p>
+          <h4>Built with</h4>
+          <p>Javascript, Bootstrap, Jquery</p>
+          <div class="buttons">
+            <a
+              class="link"
+              href="https://github.com/jorgeneikemo/Jorgen_Eikemo_SP1"
+              target="_blank"
+              >Github</a
+            >
+            <a
+              class="link"
+              href="https://jorgeneikemo.github.io/Jorgen_Eikemo_SP1/Web%20Application/index.html"
+              target="_blank"
+              >Demo</a
+            >
+          </div>
+        </div>
+        <div class="card">
+          <h3>Countries of the World</h3>
+          <p>
+            Search for countries of the world. Get info about them. Using
+            restcountries.api. Personal project for learning to work with api,
+            html, bootstrap and javascript.
+          </p>
+          <h4>Built with</h4>
+          <p>Javascript, Bootstrap</p>
+          <div class="buttons">
+            <a
+              class="link"
+              href="https://github.com/jorgeneikemo/countryapi"
+              target="_blank"
+              >Github</a
+            >
+            <a
+              class="link"
+              href="https://jorgeneikemo.github.io/countryapi/"
+              target="_blank"
+              >Demo</a
+            >
+          </div>
+        </div>
+        <div class="card">
+          <h3>Flag Game</h3>
+          <p>
+            Game where you attempt to guess the flag. Random flags for all
+            independent nations come from restcountries api. Personal project
+            for learning to work with APIs, HTML, CSS and javascript.
+          </p>
+          <h4>Built with</h4>
+          <p>Javascript, CSS</p>
+          <div class="buttons">
+            <a
+              class="link"
+              href="https://github.com/jorgeneikemo/flaggame"
+              target="_blank"
+              >Github</a
+            >
+            <a
+              class="link"
+              href="https://jorgeneikemo.github.io/flaggame/"
+              target="_blank"
+              >Demo</a
+            >
+          </div>
+        </div>
+        <div class="card">
+          <h3>2D platformer</h3>
+          <p>
+            2D platform controller created in Unity3d and written in C#. I
+            created all assets using Asesprite, Blender 3d and FL Studio.
+            Personal project for learning to create a solid 2d platform
+            controller in the style of super meat boy/celeste, and learning to
+            create pixel art and animations.
+          </p>
+          <img
+            src="https://raw.githubusercontent.com/jorgeneikemo/2dPlatformer/master/documentation/demo.gif"
+            alt=""
+          />
+          <h4>Built with</h4>
+          <p>Unity3d, C#, Aseprite, Blender 3d, FL Studio</p>
+          <div class="buttons">
+            <a
+              class="link"
+              href="https://github.com/jorgeneikemo/2dPlatformer"
+              target="_blank"
+              >Github</a
+            >
+            <a
+              class="link"
+              href="https://drive.google.com/file/d/1r2Afi48dMHUTAg6vuX76cKtx-K3k8LsB/view"
+              target="_blank"
+              >Download demo</a
+            >
+          </div>
+        </div>
+      </div>
     </main>
     <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

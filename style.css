@@ -1,123 +1,133 @@
-  body {
-    font-family: 'Poppins', serif;
-    font-size: 1.1rem;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #222120;
-    color: #F8F6F5;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: fit-content;
-    padding-bottom: 2rem;
+body {
+  font-family: "Poppins", serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #222120;
+  color: #f8f6f5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: fit-content;
+  padding-bottom: 2rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: fit-content;
+  padding-bottom: 2rem;
+}
+
+h1 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+}
+
+p {
+  margin-top: 0;
+}
+
+h4 {
+  margin-bottom: 0.5rem;
+}
+
+ul {
+  margin-bottom: 2rem;
+}
+
+.list-title {
+  margin-top: 1rem;
+  margin-bottom: 0;
+  line-height: 0;
+}
+
+.card {
+  border-top: 1px solid rgba(255, 255, 255, 0.478);
+  width: 100%;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.container > h1,
+.container > p {
+  align-self: flex-start;
+}
+
+.card > img {
+  border-radius: 8%;
+  max-width: 50%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  align-items: center;
+  width: 75ch;
+  padding-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+#projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Styling for link elements */
+.link {
+  align-self: flex-start;
+  color: #e2e2e2;
+  transition: color 250ms, transform 150ms;
+  font-size: 1.2rem;
+}
+
+/* Styling for link elements on hover */
+.link:hover {
+  color: #f8f6f5;
+  transform: translateY(-1px) scale(1.01);
+}
+
+/* Styling for buttons */
+.buttons {
+  align-self: flex-end;
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+@media only screen and (max-width: 980px) {
+  /* Adjust padding for the "aboutme" ID */
+  #aboutme {
+    padding-top: 0;
   }
 
-  main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: fit-content;
-    padding-bottom: 2rem;
-  }
-  
-  h1 {
-    font-size: 2.2rem;
-    margin-bottom: 1rem;
-  }
-  
-  h3 {
-    margin-top: 2rem;
-    font-size: 1.5rem;
-  }
-  
-  p {
-    margin-top: 0;
-  }
-  
-  h4 {
-    margin-bottom: 0.5rem;
-  }
-
-  .card {
-    border-top: 1px solid rgba(255, 255, 255, 0.478);
-    width: 100%;
-    margin-bottom: 1rem;
-    margin-top: 2rem;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .container > h1,
-  .container > p {
-    align-self: flex-start;
-  }
-  
-  .card > img {
-    border-radius: 8%;
-    max-width: 50%;
-  }
-  
+  /* Adjust height and width for container elements */
   .container {
-    display: flex;
+    height: min-content;
+    padding-top: 0;
+    width: 80%;
+  }
+
+  /* Adjust flex-direction and max-width for card elements */
+  .container-row {
     flex-direction: column;
-    text-align: start;
-    align-items: center;
-    width: 75ch;
-    padding-top: 2rem;
-    margin-bottom: 4rem;
+    height: auto;
   }
-  
-  #projects {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
+  /* Adjust max-width for images within cards */
+  .card > img {
+    max-width: 100%;
   }
-  
-  /* Styling for link elements */
-  .link {
-    align-self: flex-start;
-    color: #e2e2e2;
-    transition: color 250ms, transform 150ms;
-    font-size: 1.2rem;
-  }
-  
-  /* Styling for link elements on hover */
-  .link:hover {
-    color: #F8F6F5;
-    transform: translateY(-1px) scale(1.01);
-  }
-  
-  /* Styling for buttons */
-  .buttons {
-    align-self: flex-end;
-    width: 100%;
-    display: flex;
-    gap: 1rem;
-    margin-top: 2rem;
-  }
-  
-  @media only screen and (max-width: 980px) {
-    /* Adjust padding for the "aboutme" ID */
-    #aboutme {
-      padding-top: 0;
-    }
-  
-    /* Adjust height and width for container elements */
-    .container {
-      height: min-content;
-      padding-top: 0;
-      width: 80%;
-    }
-  
-    /* Adjust flex-direction and max-width for card elements */
-    .container-row {
-      flex-direction: column;
-      height: auto;
-    }
-  
-    /* Adjust max-width for images within cards */
-    .card > img {
-      max-width: 100%;
-    }
-  }
+}
