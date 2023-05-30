@@ -40,13 +40,13 @@ h4 {
 }
 
 ul {
+  margin-top: 0;
   margin-bottom: 2rem;
 }
 
 .list-title {
   margin-top: 1rem;
-  margin-bottom: 0;
-  line-height: 0;
+  margin-bottom: 0.5rem;
 }
 
 .card {
